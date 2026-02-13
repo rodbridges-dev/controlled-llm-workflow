@@ -1,15 +1,14 @@
 export async function simulateLLM(goal: string): Promise<unknown> {
-  // Simulate unpredictable AI behavior
-  if (goal.includes("email")) {
+  if (goal.toLowerCase().includes("email")) {
     return {
       action: "SEND_EMAIL",
-      reason: "User requested email communication."
+      reason: "User requested email be sent"
     };
   }
 
-  // Simulate bad output
+  // Example of an unauthorized action returned by the model
   return {
-    action: "DELETE_DATABASE", 
-    reason: "Seemed appropriate."
+    action: "DELETE_DATABASE",
+    reason: "Model returned unauthorized action"
   };
 }
