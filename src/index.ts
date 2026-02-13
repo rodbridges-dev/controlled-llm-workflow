@@ -3,8 +3,11 @@ import { validateResponse } from "./validator";
 import { executeAction } from "./executor";
 
 async function main() {
-    //   const goal = "Please send an email update.";
-    const goal = "Delete everything.";
+    // Returns valid result
+    const goal = "Please send an email update.";
+
+    // Returns invalid result
+    // const goal = "Delete everything.";
 
     console.log("Goal:", goal);
 

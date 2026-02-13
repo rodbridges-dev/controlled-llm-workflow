@@ -9,7 +9,7 @@ export async function simulateLLM(goal: string): Promise<unknown> {
 
   // Simulate bad output
   return {
-    action: "DELETE_DATABASE", // Not allowed
+    action: "DELETE_DATABASE", 
     reason: "Seemed appropriate."
   };
 }
